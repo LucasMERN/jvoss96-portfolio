@@ -29,8 +29,8 @@ export default function Home() {
           portfolio to see my achievements.
           <br />
           <br />
-          If you are interested in connecting, my contact information is provided
-          below.
+          If you are interested in connecting, my contact information is
+          provided below.
         </p>
       </section>
       <Hero />

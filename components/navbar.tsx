@@ -65,7 +65,9 @@ export function Navbar() {
                   {project.description}
                 </ListItem>
               ))}
-              <ListItem title="All Projects" href="/projects">Click here to view all of my projects!</ListItem>
+              <ListItem title="All Projects" href="/projects">
+                Click here to view all of my projects!
+              </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

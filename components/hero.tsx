@@ -45,86 +45,88 @@ const heroCarousel = [
 ];
 
 const Hero = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  
-    useEffect(() => {
-      const startInterval = () => {
-        intervalRef.current = setInterval(() => {
-          setCurrentIndex((prevIndex) => (prevIndex + 1) % heroCarousel.length);
-        }, 3500);
-      };
-  
-      startInterval();
-  
-      return () => {
-        if (intervalRef.current) {
-          clearInterval(intervalRef.current);
-        }
-      };
-    }, []);
-  
-    const resetInterval = () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    const startInterval = () => {
       intervalRef.current = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % heroCarousel.length);
       }, 3500);
     };
-  
-    const handlePrevClick = () => {
-      setCurrentIndex((prevIndex) => (prevIndex - 1 + heroCarousel.length) % heroCarousel.length);
-      resetInterval();
+
+    startInterval();
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
     };
-  
-    const handleNextClick = () => {
+  }, []);
+
+  const resetInterval = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+    intervalRef.current = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % heroCarousel.length);
-      resetInterval();
-    };
-  
-    const { title, desc, url, src, alt } = heroCarousel[currentIndex];
-  
-    return (
-      <section className="relative w-full h-[30rem] lg:h-[45rem] overflow-hidden">
-        <div className="relative w-full h-full">
-          <Button
-            variant="outline"
-            onClick={handlePrevClick}
-            className="absolute z-20 bottom-16 left-16 hidden lg:block"
-          >
-            <ChevronLeft />
-          </Button>
-          <Button
-            variant="outline"
-            onClick={handleNextClick}
-            className="absolute z-20 bottom-16 right-16 hidden lg:block"
-          >
-            <ChevronRight />
-          </Button>
-          <Image
-            fill={true}
-            style={{ objectFit: "cover" }}
-            src={src}
-            alt={alt}
-            priority={true}
-            className="object-cover w-full h-full"
-          />
-          <div className="text-slate-200 absolute top-8 md:top-20 lg:top-1/4 left-0 transform w-full lg:w-1/2 ">
-            <div className="flex flex-col gap-6 lg:bg-black/50 rounded mx-8 lg:p-6">
-              <h2 className="text-3xl font-bold">{title}</h2>
-              <p className="text-xl">{desc}</p>
-              <Link
-                href={url}
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-fit"
-              >
-                Find Out More
-              </Link>
-            </div>
+    }, 3500);
+  };
+
+  const handlePrevClick = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + heroCarousel.length) % heroCarousel.length
+    );
+    resetInterval();
+  };
+
+  const handleNextClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % heroCarousel.length);
+    resetInterval();
+  };
+
+  const { title, desc, url, src, alt } = heroCarousel[currentIndex];
+
+  return (
+    <section className="relative w-full h-[30rem] lg:h-[45rem] overflow-hidden">
+      <div className="relative w-full h-full">
+        <Button
+          variant="outline"
+          onClick={handlePrevClick}
+          className="absolute z-20 bottom-16 left-16 hidden lg:block"
+        >
+          <ChevronLeft />
+        </Button>
+        <Button
+          variant="outline"
+          onClick={handleNextClick}
+          className="absolute z-20 bottom-16 right-16 hidden lg:block"
+        >
+          <ChevronRight />
+        </Button>
+        <Image
+          fill={true}
+          style={{ objectFit: "cover" }}
+          src={src}
+          alt={alt}
+          priority={true}
+          className="object-cover w-full h-full"
+        />
+        <div className="text-slate-200 absolute top-8 md:top-20 lg:top-1/4 left-0 transform w-full lg:w-1/2 ">
+          <div className="flex flex-col gap-6 lg:bg-black/50 rounded mx-8 lg:p-6">
+            <h2 className="text-3xl font-bold">{title}</h2>
+            <p className="text-xl">{desc}</p>
+            <Link
+              href={url}
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-fit"
+            >
+              Find Out More
+            </Link>
           </div>
         </div>
-      </section>
-    );
-  };
-  
-  export default Hero;
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

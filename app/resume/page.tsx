@@ -23,7 +23,12 @@ export default function Resume() {
         <Badge variant="secondary">Debugging/Testing</Badge>
       </section>
       <section className="container flex flex-col justify-center items-center gap-6">
-        <Link target="_blank" href="/00justicevoss-resume.pdf" download="00justicevoss-resume.pdf" className="underline -mb-3">
+        <Link
+          target="_blank"
+          href="/00justicevoss-resume.pdf"
+          download="00justicevoss-resume.pdf"
+          className="underline -mb-3"
+        >
           <h2>Download PDF</h2>
         </Link>
         <video

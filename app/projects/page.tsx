@@ -51,7 +51,9 @@ export default function Projects() {
   return (
     <main className="min-h-screen flex flex-col gap-6 mb-6">
       <div className="py-8 container">
-        <h2 className="text-2xl font-bold border-b border-b-white w-fit pb-2 pr-12">My Projects</h2>
+        <h2 className="text-2xl font-bold border-b border-b-white w-fit pb-2 pr-12">
+          My Projects
+        </h2>
       </div>
       <section className="container grid gap-6 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
         {projects.map((project, index) => (
@@ -64,7 +66,10 @@ export default function Projects() {
 
 const HoverCard = ({ project }: { project: ProjectData }) => {
   return (
-    <Link href={project.url} className="aspect-video group h-full border overflow-hidden flex justify-center items-center rounded shadow-lg relative bg-gradient-to-tr from-[rgba(0,0,0,0.8)] to-transparent">
+    <Link
+      href={project.url}
+      className="aspect-video group h-full border overflow-hidden flex justify-center items-center rounded shadow-lg relative bg-gradient-to-tr from-[rgba(0,0,0,0.8)] to-transparent"
+    >
       <Image
         width={500}
         height={500}

@@ -85,7 +85,7 @@ export default function Base() {
           </div>
         </div>
       </section>
-      
+
       <section>
         <div className="pt-8 pb-2 container flex flex-col gap-3">
           <h3 className="text-2xl font-medium">Gallery</h3>

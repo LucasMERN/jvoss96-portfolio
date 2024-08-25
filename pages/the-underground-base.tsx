@@ -142,7 +142,7 @@ export default function Base() {
           </div>
         </div>
       </section>
-      
+
       <section>
         <div className="pt-8 pb-2 container flex flex-col gap-3">
           <h3 className="text-2xl font-medium">Mountain Exterior:</h3>
@@ -403,11 +403,11 @@ export default function Base() {
             to unlock different sections of the area. Once unlocked the player
             must climb up to the unlocked area to remove obstacles from the
             cubes paths. This is to help break up the gameplay so that the
-            player isn&apos;t only pushing boxes around the entire time by adding
-            parkour and other interactable objects. Once completed the player
-            will be able to access the reward room up above which acts as a
-            valve and a gate by locking the player in till they find the switch
-            to open the hidden exit.
+            player isn&apos;t only pushing boxes around the entire time by
+            adding parkour and other interactable objects. Once completed the
+            player will be able to access the reward room up above which acts as
+            a valve and a gate by locking the player in till they find the
+            switch to open the hidden exit.
           </p>
           <Carousel
             opts={{

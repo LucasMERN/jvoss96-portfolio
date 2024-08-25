@@ -35,7 +35,7 @@ const ProjectHero = ({ item }: { item: ProjectData }) => {
               {item.desc.map((descItem, index) => (
                 <>
                   <p key={index}>{descItem}</p>
-                  {index === item.desc.length-1 ? "" : <br />}
+                  {index === item.desc.length - 1 ? "" : <br />}
                 </>
               ))}
             </div>
@@ -55,34 +55,34 @@ const ProjectHero = ({ item }: { item: ProjectData }) => {
         </div>
       </div>
       <div className="flex flex-col gap-6 lg:hidden container">
-          <div className="flex flex-col gap-2">
-            <span className="font-bold">ROLE</span>
-            <span>{item.role}</span>
-          </div>
-          <div className="flex flex-col gap-2">
-            <span className="font-bold">DESCRIPTION</span>
-            <div>
-              {item.desc.map((descItem, index) => (
-                <>
-                  <p key={index}>{descItem}</p>
-                  <br />
-                </>
-              ))}
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <span className="font-bold">YEAR</span>
-            <span>{item.year}</span>
-          </div>
-          <div className="flex flex-col gap-2">
-            <span className="font-bold">GENRE</span>
-            <span>{item.genre}</span>
-          </div>
-          <div className="flex flex-col gap-2">
-            <span className="font-bold">GAME ENGINE</span>
-            <span>{item.engine}</span>
+        <div className="flex flex-col gap-2">
+          <span className="font-bold">ROLE</span>
+          <span>{item.role}</span>
+        </div>
+        <div className="flex flex-col gap-2">
+          <span className="font-bold">DESCRIPTION</span>
+          <div>
+            {item.desc.map((descItem, index) => (
+              <>
+                <p key={index}>{descItem}</p>
+                <br />
+              </>
+            ))}
           </div>
         </div>
+        <div className="flex flex-col gap-2">
+          <span className="font-bold">YEAR</span>
+          <span>{item.year}</span>
+        </div>
+        <div className="flex flex-col gap-2">
+          <span className="font-bold">GENRE</span>
+          <span>{item.genre}</span>
+        </div>
+        <div className="flex flex-col gap-2">
+          <span className="font-bold">GAME ENGINE</span>
+          <span>{item.engine}</span>
+        </div>
+      </div>
     </section>
   );
 };

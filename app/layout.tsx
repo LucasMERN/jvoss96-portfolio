@@ -5,8 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import Link from "next/link";
 import { Linkedin, Mail, Youtube } from "lucide-react";
-import BackToTopButton from "@/components/ui/backToTop";
-import BackToHomeButton from "@/components/ui/backToHomeButton";
+import BackToTopButton from "@/components/backToTop";
+import BackToHomeButton from "@/components/backToHomeButton";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -25,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </head>
       <body>
         <ThemeProvider
           attribute="class"
@@ -63,7 +65,10 @@ export default function RootLayout({
                 <Link href="mailto:justvoss96@gmail.com">
                   <Mail />
                 </Link>
-                <Link target="_blank" href="https://www.linkedin.com/in/justice-voss-4859251b7/">
+                <Link
+                  target="_blank"
+                  href="https://www.linkedin.com/in/justice-voss-4859251b7/"
+                >
                   <Linkedin />
                 </Link>
               </div>
