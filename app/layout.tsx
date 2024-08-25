@@ -52,6 +52,7 @@ export default function RootLayout({
                 Designed & Developed by{" "}
                 <Link
                   href="https://www.linkedin.com/in/lucaswinklerdev/"
+                  target="_blank"
                   className="underline"
                 >
                   Lucas Winkler
@@ -59,14 +60,11 @@ export default function RootLayout({
                 © 2024
               </span>
               <div className="flex flex-row gap-4 items-center">
-                <Link href="">
+                <Link href="mailto:justvoss96@gmail.com">
                   <Mail />
                 </Link>
-                <Link href="">
+                <Link target="_blank" href="https://www.linkedin.com/in/justice-voss-4859251b7/">
                   <Linkedin />
-                </Link>
-                <Link href="">
-                  <Youtube />
                 </Link>
               </div>
             </section>

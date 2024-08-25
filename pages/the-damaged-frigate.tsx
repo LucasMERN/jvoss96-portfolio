@@ -104,11 +104,33 @@ export default function Frigate() {
       </section>
 
       <section>
-        <div className="pt-8 pb-2 container">
+        <div className="pt-8 pb-2 container flex flex-col gap-2">
           <h3 className="text-2xl font-medium">Videos</h3>
+          <div className="flex items-center justify-between gap-4">
+            <React.Suspense fallback={<p>Loading video...</p>}>
+              <iframe
+                src="https://www.youtube.com/embed/V4zpUxoZdo4"
+                width="400"
+                height="320"
+                loading="eager"
+                title="Project Stormsurge Gameplay Trailer."
+                className="w-full"
+              />
+            </React.Suspense>
+            <React.Suspense fallback={<p>Loading video...</p>}>
+              <iframe
+                src="https://www.youtube.com/embed/oFhToRLyvOM"
+                width="400"
+                height="320"
+                loading="eager"
+                title="Project Stormsurge Gameplay Trailer."
+                className="w-full"
+              />
+            </React.Suspense>
+          </div>
         </div>
       </section>
-
+      
       <section>
         <div className="pt-8 pb-2 container flex flex-col gap-3">
           <h3 className="text-2xl font-medium">Documentation</h3>

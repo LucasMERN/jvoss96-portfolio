@@ -94,11 +94,23 @@ export default function Temple() {
       </section>
 
       <section>
-        <div className="pt-8 pb-2 container">
+        <div className="pt-8 pb-2 container flex flex-col gap-2">
           <h3 className="text-2xl font-medium">Videos</h3>
+          <div className="flex items-center justify-between">
+            <React.Suspense fallback={<p>Loading video...</p>}>
+              <iframe
+                src="https://www.youtube.com/embed/uU_anM57zMI"
+                width="400"
+                height="320"
+                loading="eager"
+                title="Project Stormsurge Gameplay Trailer."
+                className="w-1/2"
+              />
+            </React.Suspense>
+          </div>
         </div>
       </section>
-
+      
       <section>
         <div className="pt-8 pb-2 container flex flex-col gap-3">
           <h3 className="text-2xl font-medium">The Mountainside Climb:</h3>
