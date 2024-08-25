@@ -52,7 +52,7 @@ const Hero = () => {
       const startInterval = () => {
         intervalRef.current = setInterval(() => {
           setCurrentIndex((prevIndex) => (prevIndex + 1) % heroCarousel.length);
-        }, 5000);
+        }, 3500);
       };
   
       startInterval();
@@ -70,7 +70,7 @@ const Hero = () => {
       }
       intervalRef.current = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % heroCarousel.length);
-      }, 5000);
+      }, 3500);
     };
   
     const handlePrevClick = () => {
