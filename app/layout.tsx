@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import Link from "next/link";
 import { Linkedin, Mail, Youtube } from "lucide-react";
+import BackToTopButton from "@/components/ui/backToTop";
+import BackToHomeButton from "@/components/ui/backToHomeButton";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -31,7 +33,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="py-8 border-b border-white">
+          <div className="py-8 border-b border-primary">
             <div className="container md:flex justify-between md:items-end">
               <Link href="/">
                 <h1 className="hidden md:block text-5xl font-bold">
@@ -41,12 +43,20 @@ export default function RootLayout({
               <Navbar />
             </div>
           </div>
+          <BackToHomeButton />
           {children}
-          <footer className="border-t border-white py-6">
+          <BackToTopButton />
+          <footer className="border-t border-primary py-6">
             <section className="container flex flex-col gap-3 md:gap-0 md:flex-row md:justify-between">
               <span>
-                Designed & Developed by <Link href="https://www.linkedin.com/in/lucaswinklerdev/" className="underline">Lucas Winkler</Link> ©
-                2024
+                Designed & Developed by{" "}
+                <Link
+                  href="https://www.linkedin.com/in/lucaswinklerdev/"
+                  className="underline"
+                >
+                  Lucas Winkler
+                </Link>{" "}
+                © 2024
               </span>
               <div className="flex flex-row gap-4 items-center">
                 <Link href="">

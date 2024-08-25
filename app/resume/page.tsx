@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Resume() {
   return (
     <main className="min-h-screen flex flex-col justify-center items-center gap-6">
-      <section className="flex flex-wrap gap-4 container justify-center -mt-6 mb-12">
+      <section className="flex flex-wrap gap-4 container justify-center mb-12">
         <Badge variant="default">Perforce</Badge>
         <Badge variant="default">Confluence</Badge>
         <Badge variant="default">Unreal Engine 4</Badge>
@@ -22,11 +22,23 @@ export default function Resume() {
         <Badge variant="secondary">Balancing and Mechanics</Badge>
         <Badge variant="secondary">Debugging/Testing</Badge>
       </section>
-      <Link href="" className="underline -mb-3"><h2>Download PDF</h2></Link>
-      <video width="520" height="840" preload="auto" autoPlay loop muted playsInline>
-        <source src="/resume.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <section className="container flex flex-col justify-center items-center gap-6">
+        <Link href="" className="underline -mb-3">
+          <h2>Download PDF</h2>
+        </Link>
+        <video
+          width="520"
+          height="840"
+          preload="auto"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/resume.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
     </main>
   );
 }

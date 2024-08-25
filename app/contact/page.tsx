@@ -67,17 +67,17 @@ export default function Contact() {
   return (
     <main className="min-h-screen flex flex-col justify-center items-center">
       <Form {...form}>
-        <div className="flex flex-col justify-center items-center gap-6 mb-12">
-          <h2 className="text-4xl font-bold">Let&apos;s Play!</h2>
-          <h3 className="text-2xl font-semibold">
+        <div className="flex flex-col justify-center items-center gap-6 mb-12 container">
+          <h2 className="text-4xl font-bold text-center">Let&apos;s Play!</h2>
+          <h3 className="text-2xl font-semibold text-center">
             FEEL FREE TO CONTACT ME FOR FUTURE WORK AND PARTNERSHIPS
           </h3>
         </div>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="w-2/3 space-y-6"
+          className="container lg:w-2/3 space-y-6"
         >
-          <div className="flex gap-6 w-full">
+          <div className="lg:flex lg:gap-6 w-full">
             <FormField
               control={form.control}
               name="firstName"
@@ -105,7 +105,7 @@ export default function Contact() {
               )}
             />
           </div>
-          <div className="flex gap-6 w-full">
+          <div className="lg:flex lg:gap-6 w-full">
             <FormField
               control={form.control}
               name="email"

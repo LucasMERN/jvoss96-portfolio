@@ -86,7 +86,7 @@ export default function Temple() {
     <main className="min-h-screen flex flex-col gap-6 mb-6">
       <section>
         <div className="pt-8 pb-2 container">
-          <h2 className="text-2xl font-bold border-b border-b-white w-fit pb-2 pr-12">
+          <h2 className="text-2xl font-bold border-b border-b-primary w-fit pb-2 pr-12">
             THE RUINED TEMPLE
           </h2>
         </div>
