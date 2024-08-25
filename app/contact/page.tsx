@@ -68,7 +68,7 @@ export default function Contact() {
     <main className="min-h-screen flex flex-col justify-center items-center">
       <Form {...form}>
         <div className="flex flex-col justify-center items-center gap-6 mb-12">
-          <h2 className="text-4xl font-bold">Let's Play!</h2>
+          <h2 className="text-4xl font-bold">Let&apos;s Play!</h2>
           <h3 className="text-2xl font-semibold">
             FEEL FREE TO CONTACT ME FOR FUTURE WORK AND PARTNERSHIPS
           </h3>
