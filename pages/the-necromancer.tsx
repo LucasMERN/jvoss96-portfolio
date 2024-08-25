@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import ProjectHero from "@/components/projectHero";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 const project = {
   title: "The Necromancer",
@@ -74,22 +75,39 @@ export default function Base() {
           >
             <CarouselContent>
               {gallery.map((_, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1 h-full">
-                    <Card className="rounded-0 border-0 h-full">
-                      <CardContent className="h-full p-0">
-                        <Image
-                          height={500}
-                          width={500}
-                          alt="gallery image"
-                          src={`/necromancer/${_}.webp`}
-                          style={{ objectFit: "cover" }}
-                          className="h-full w-full"
-                        />
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
+                <Dialog key={index}>
+                  <DialogTrigger className="min-w-0 shrink-0 grow-0 basis-full pl-4 md:basis-1/2 lg:basis-1/3">
+                    <CarouselItem
+                      key={index}
+                      className="md:basis-1/2 lg:basis-1/3"
+                    >
+                      <div className="p-1 h-full">
+                        <Card className="rounded-0 border-0 h-full">
+                          <CardContent className="h-full p-0">
+                            <Image
+                              height={500}
+                              width={500}
+                              alt="gallery image"
+                              src={`/necromancer/${_}.webp`}
+                              style={{ objectFit: "cover" }}
+                              className="h-full w-full"
+                            />
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </CarouselItem>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-5xl">
+                    <Image
+                      height={500}
+                      width={500}
+                      alt="gallery image"
+                      src={`/necromancer/${_}.webp`}
+                      style={{ objectFit: "cover" }}
+                      className="h-full w-full"
+                    />
+                  </DialogContent>
+                </Dialog>
               ))}
             </CarouselContent>
             <CarouselPrevious className="left-4" />

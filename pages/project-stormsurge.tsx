@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import ProjectHero from "@/components/projectHero";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 const project = {
   title: "Project Stormsurge",
@@ -27,18 +28,9 @@ const project = {
   engine: "Unreal Engine 5",
 };
 
-const bossGallery = [
-  "boss-1",
-  "boss-2",
-  "boss-3",
-];
+const bossGallery = ["boss-1", "boss-2", "boss-3"];
 
-const lineGallery = [
-  "line-1",
-  "line-2",
-  "line-3",
-  "line-4",
-];
+const lineGallery = ["line-1", "line-2", "line-3", "line-4"];
 
 const mainGallery = [
   "main-1",
@@ -81,6 +73,17 @@ export default function Stormsurge() {
       <section>
         <div className="pt-8 pb-2 container">
           <h3 className="text-2xl font-medium">Videos</h3>
+          <div className="flex items-center justify-between">
+            <React.Suspense fallback={<p>Loading video...</p>}>
+              <iframe
+                src="https://www.youtube.com/watch?v=vW63xq6hcMA"
+                width="400"
+                height="320"
+                loading="eager"
+                title="Project Stormsurge Gameplay Trailer."
+              />
+            </React.Suspense>
+          </div>
         </div>
       </section>
 
@@ -125,22 +128,36 @@ export default function Stormsurge() {
           >
             <CarouselContent>
               {storageGallery.map((_, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1 h-full">
-                    <Card className="rounded-0 border-0 h-full">
-                      <CardContent className="h-full p-0">
-                        <Image
-                          height={500}
-                          width={500}
-                          alt="gallery image"
-                          src={`/project-stormsurge/${_}.webp`}
-                          style={{ objectFit: "cover" }}
-                          className="h-full w-full"
-                        />
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
+                <Dialog key={index}>
+                  <DialogTrigger className="min-w-0 shrink-0 grow-0 basis-full pl-4 md:basis-1/2 lg:basis-1/3">
+                    <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                      <div className="p-1 h-full">
+                        <Card className="rounded-0 border-0 h-full">
+                          <CardContent className="h-full p-0">
+                            <Image
+                              height={500}
+                              width={500}
+                              alt="gallery image"
+                              src={`/project-stormsurge/${_}.webp`}
+                              style={{ objectFit: "cover" }}
+                              className="h-full w-full"
+                            />
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </CarouselItem>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-5xl">
+                    <Image
+                      height={500}
+                      width={500}
+                      alt="gallery image"
+                      src={`/project-stormsurge/${_}.webp`}
+                      style={{ objectFit: "cover" }}
+                      className="h-full w-full"
+                    />
+                  </DialogContent>
+                </Dialog>
               ))}
             </CarouselContent>
             <CarouselPrevious className="left-4" />
@@ -172,22 +189,36 @@ export default function Stormsurge() {
           >
             <CarouselContent>
               {mainGallery.map((_, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1 h-full">
-                    <Card className="rounded-0 border-0 h-full">
-                      <CardContent className="h-full p-0">
-                        <Image
-                          height={500}
-                          width={500}
-                          alt="gallery image"
-                          src={`/project-stormsurge/${_}.webp`}
-                          style={{ objectFit: "cover" }}
-                          className="h-full w-full"
-                        />
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
+                <Dialog key={index}>
+                  <DialogTrigger className="min-w-0 shrink-0 grow-0 basis-full pl-4 md:basis-1/2 lg:basis-1/3">
+                    <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                      <div className="p-1 h-full">
+                        <Card className="rounded-0 border-0 h-full">
+                          <CardContent className="h-full p-0">
+                            <Image
+                              height={500}
+                              width={500}
+                              alt="gallery image"
+                              src={`/project-stormsurge/${_}.webp`}
+                              style={{ objectFit: "cover" }}
+                              className="h-full w-full"
+                            />
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </CarouselItem>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-5xl">
+                    <Image
+                      height={500}
+                      width={500}
+                      alt="gallery image"
+                      src={`/project-stormsurge/${_}.webp`}
+                      style={{ objectFit: "cover" }}
+                      className="h-full w-full"
+                    />
+                  </DialogContent>
+                </Dialog>
               ))}
             </CarouselContent>
             <CarouselPrevious className="left-4" />
@@ -220,22 +251,36 @@ export default function Stormsurge() {
           >
             <CarouselContent>
               {lineGallery.map((_, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1 h-full">
-                    <Card className="rounded-0 border-0 h-full">
-                      <CardContent className="h-full p-0">
-                        <Image
-                          height={500}
-                          width={500}
-                          alt="gallery image"
-                          src={`/project-stormsurge/${_}.webp`}
-                          style={{ objectFit: "cover" }}
-                          className="h-full w-full"
-                        />
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
+                <Dialog key={index}>
+                  <DialogTrigger className="min-w-0 shrink-0 grow-0 basis-full pl-4 md:basis-1/2 lg:basis-1/3">
+                    <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                      <div className="p-1 h-full">
+                        <Card className="rounded-0 border-0 h-full">
+                          <CardContent className="h-full p-0">
+                            <Image
+                              height={500}
+                              width={500}
+                              alt="gallery image"
+                              src={`/project-stormsurge/${_}.webp`}
+                              style={{ objectFit: "cover" }}
+                              className="h-full w-full"
+                            />
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </CarouselItem>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-5xl">
+                    <Image
+                      height={500}
+                      width={500}
+                      alt="gallery image"
+                      src={`/project-stormsurge/${_}.webp`}
+                      style={{ objectFit: "cover" }}
+                      className="h-full w-full"
+                    />
+                  </DialogContent>
+                </Dialog>
               ))}
             </CarouselContent>
             <CarouselPrevious className="left-4" />
@@ -274,22 +319,36 @@ export default function Stormsurge() {
           >
             <CarouselContent>
               {bossGallery.map((_, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1 h-full">
-                    <Card className="rounded-0 border-0 h-full">
-                      <CardContent className="h-full p-0">
-                        <Image
-                          height={500}
-                          width={500}
-                          alt="gallery image"
-                          src={`/project-stormsurge/${_}.webp`}
-                          style={{ objectFit: "cover" }}
-                          className="h-full w-full"
-                        />
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
+                <Dialog key={index}>
+                  <DialogTrigger className="min-w-0 shrink-0 grow-0 basis-full pl-4 md:basis-1/2 lg:basis-1/3">
+                    <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                      <div className="p-1 h-full">
+                        <Card className="rounded-0 border-0 h-full">
+                          <CardContent className="h-full p-0">
+                            <Image
+                              height={500}
+                              width={500}
+                              alt="gallery image"
+                              src={`/project-stormsurge/${_}.webp`}
+                              style={{ objectFit: "cover" }}
+                              className="h-full w-full"
+                            />
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </CarouselItem>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-5xl">
+                    <Image
+                      height={500}
+                      width={500}
+                      alt="gallery image"
+                      src={`/project-stormsurge/${_}.webp`}
+                      style={{ objectFit: "cover" }}
+                      className="h-full w-full"
+                    />
+                  </DialogContent>
+                </Dialog>
               ))}
             </CarouselContent>
             <CarouselPrevious className="left-4" />

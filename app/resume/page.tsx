@@ -1,38 +1,32 @@
-import Hero from "@/components/hero";
-import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
-export default function Home() {
+export default function Resume() {
   return (
-    <main className="min-h-screen flex flex-col gap-6">
-      <section className="container flex flex-col lg:flex-row lg:justify-between my-16">
-        <div className="flex flex-col">
-          <h2 className="text-xl font-bold tracking-widest">ABOUT</h2>
-          <Image
-            height={300}
-            width={300}
-            alt="Headshot of Justice Voss."
-            src="/headshot.webp"
-            className="-mt-8 h-auto"
-          />
-        </div>
-        <p className="lg:w-1/2 mt-6 lg:mt-24">
-          I am a recent game design graduate from Full Sail University.
-          <br />
-          <br />
-          I have a passion for exploring all facets of game design, including
-          engine development, art, animation, level and systems design, and
-          sound design.
-          <br />
-          <br />
-          My goal is to gain diverse experience to bring my creative ideas to
-          life and share them with the world. Feel free to check out my
-          portfolio to see my achievements.
-          <br />
-          <br />
-          If you are interested in connecting, my contact information is provided
-          below.
-        </p>
+    <main className="min-h-screen flex flex-col justify-center items-center gap-6">
+      <section className="flex flex-wrap gap-4 container justify-center -mt-6 mb-12">
+        <Badge variant="default">Perforce</Badge>
+        <Badge variant="default">Confluence</Badge>
+        <Badge variant="default">Unreal Engine 4</Badge>
+        <Badge variant="default">Level Design</Badge>
+        <Badge variant="default">Game Design</Badge>
+        <Badge variant="default">Agile/SCRUM Methodologies</Badge>
+        <Badge variant="default">JIRA</Badge>
+        <Badge variant="secondary">Technical Documentation</Badge>
+        <Badge variant="secondary">System Design</Badge>
+        <Badge variant="secondary">Unreal Engine 5</Badge>
+        <Badge variant="secondary">3Ds Max</Badge>
+        <Badge variant="secondary">Blender</Badge>
+        <Badge variant="secondary">Prototyping</Badge>
+        <Badge variant="secondary">Flow Charts</Badge>
+        <Badge variant="secondary">Balancing and Mechanics</Badge>
+        <Badge variant="secondary">Debugging/Testing</Badge>
       </section>
+      <Link href="" className="underline -mb-3"><h2>Download PDF</h2></Link>
+      <video width="520" height="840" preload="auto" autoPlay loop muted playsInline>
+        <source src="/resume.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </main>
   );
 }
