@@ -1,11 +1,13 @@
-import { useRouter } from "next/router";
+"use client";
+
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Home } from "lucide-react";
 
 export default function BackToHomeButton() {
-  const router = useRouter();
+  const router = usePathname();
 
-  if (router.pathname === "/") {
+  if (router === "/") {
     return null;
   }
 
