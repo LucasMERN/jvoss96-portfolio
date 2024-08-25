@@ -45,7 +45,7 @@ export default function RootLayout({
           <footer className="border-t border-white py-6">
             <section className="container flex flex-col gap-3 md:gap-0 md:flex-row md:justify-between">
               <span>
-                Designed & Developed by <Link href="/">Lucas Winkler</Link> ©
+                Designed & Developed by <Link href="https://www.linkedin.com/in/lucaswinklerdev/" className="underline">Lucas Winkler</Link> ©
                 2024
               </span>
               <div className="flex flex-row gap-4 items-center">

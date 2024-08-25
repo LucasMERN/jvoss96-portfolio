@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: "Project Stormsurge",
-    role: "Project Stormsurge",
+    role: "Level Designer, Systems Designer, Game Mechanic Designer, Animator, 3D Modeler",
     url: "/projects/project-stormsurge",
     src: "/project-stormsurge/boss-1.webp",
     alt: "A dimly lit futuristic corridor is illuminated by warm, glowing lights, with a large, bright, dome-shaped energy field positioned at the center of the room, creating a striking contrast against the metallic environment.",
