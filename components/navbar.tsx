@@ -72,14 +72,24 @@ export function Navbar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/resume" legacyBehavior passHref>
+          <Link
+            href="/resume"
+            legacyBehavior
+            passHref
+            aria-label="click to open the resume page"
+          >
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Resume
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/contact" legacyBehavior passHref>
+          <Link
+            href="/contact"
+            legacyBehavior
+            passHref
+            aria-label="click to open the contact page"
+          >
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contact Me
             </NavigationMenuLink>
@@ -105,6 +115,7 @@ const ListItem = React.forwardRef<
             className
           )}
           {...props}
+          aria-label={`click to open the ${title} page`}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">

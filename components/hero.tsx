@@ -94,6 +94,7 @@ const Hero = () => {
           variant="outline"
           onClick={handlePrevClick}
           className="absolute z-20 bottom-16 left-16 hidden lg:block"
+          aria-label="click to show the previous image"
         >
           <ChevronLeft />
         </Button>
@@ -101,6 +102,7 @@ const Hero = () => {
           variant="outline"
           onClick={handleNextClick}
           className="absolute z-20 bottom-16 right-16 hidden lg:block"
+          aria-label="click to show the next image"
         >
           <ChevronRight />
         </Button>
@@ -119,6 +121,7 @@ const Hero = () => {
             <Link
               href={url}
               className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-fit"
+              aria-label={`click to open the project page for ${title}`}
             >
               Find Out More
             </Link>

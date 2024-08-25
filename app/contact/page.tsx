@@ -150,7 +150,11 @@ export default function Contact() {
             )}
           />
           <div className="flex justify-center">
-            <Button type="submit" className="w-1/4 min-w-fit">
+            <Button
+              type="submit"
+              className="w-1/4 min-w-fit"
+              aria-label="click to submit"
+            >
               Send
             </Button>
           </div>

@@ -13,7 +13,11 @@ export default function BackToHomeButton() {
 
   return (
     <div className="container md:hidden">
-      <Link href="/" className="flex gap-2 w-fit py-6">
+      <Link
+        href="/"
+        className="flex gap-2 w-fit py-6"
+        aria-label="click to return to the home page"
+      >
         <ArrowLeft /> <Home />
       </Link>
     </div>

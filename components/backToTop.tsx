@@ -35,6 +35,7 @@ export default function BackToTopButton() {
         onClick={scrollToTop}
         variant="outline"
         className="fixed bottom-24 right-6 z-50 rounded-full px-3 py-6 border border-primary text-primary shadow-lg hover:bg-primary hover:text-white focus:outline-none"
+        aria-label="click to return to the top of the page"
       >
         <ArrowUp size={24} />
       </Button>

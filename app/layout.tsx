@@ -37,7 +37,7 @@ export default function RootLayout({
         >
           <div className="py-8 border-b border-primary">
             <div className="container md:flex justify-between md:items-end">
-              <Link href="/">
+              <Link href="/" aria-label="click to return to the home page">
                 <h1 className="hidden md:block text-5xl font-bold">
                   Justice Voss
                 </h1>
@@ -56,18 +56,23 @@ export default function RootLayout({
                   href="https://www.linkedin.com/in/lucaswinklerdev/"
                   target="_blank"
                   className="underline"
+                  aria-label="click to open the LinkedIn profile of Lucas Winkler in a different tab"
                 >
                   Lucas Winkler
                 </Link>{" "}
                 © 2024
               </span>
               <div className="flex flex-row gap-4 items-center">
-                <Link href="mailto:justvoss96@gmail.com">
+                <Link
+                  href="mailto:justvoss96@gmail.com"
+                  aria-label="click to compose a new email to justvoss96@gmail.com"
+                >
                   <Mail />
                 </Link>
                 <Link
                   target="_blank"
                   href="https://www.linkedin.com/in/justice-voss-4859251b7/"
+                  aria-label="click to open the LinkedIn profile of Justice Voss in a different tab"
                 >
                   <Linkedin />
                 </Link>

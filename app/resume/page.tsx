@@ -28,6 +28,7 @@ export default function Resume() {
           href="/00justicevoss-resume.pdf"
           download="00justicevoss-resume.pdf"
           className="underline -mb-3"
+          aria-label="click to download the resume PDF file of Justice Voss"
         >
           <h2>Download PDF</h2>
         </Link>

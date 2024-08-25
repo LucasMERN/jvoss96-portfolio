@@ -69,6 +69,7 @@ const HoverCard = ({ project }: { project: ProjectData }) => {
     <Link
       href={project.url}
       className="aspect-video group h-full border overflow-hidden flex justify-center items-center rounded shadow-lg relative bg-gradient-to-tr from-[rgba(0,0,0,0.8)] to-transparent"
+      aria-label={`click to open the project page for ${project.title}`}
     >
       <Image
         width={500}
