@@ -112,7 +112,7 @@ export default function Frigate() {
       <section>
         <div className="pt-8 pb-2 container flex flex-col gap-2">
           <h3 className="text-2xl font-medium">Videos</h3>
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
             <React.Suspense fallback={<p>Loading video...</p>}>
               <iframe
                 src="https://www.youtube.com/embed/V4zpUxoZdo4"

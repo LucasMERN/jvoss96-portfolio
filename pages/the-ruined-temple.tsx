@@ -110,7 +110,7 @@ export default function Temple() {
                 height="320"
                 loading="eager"
                 title="Project Stormsurge Gameplay Trailer."
-                className="w-1/2"
+                className="w-full lg:w-1/2"
               />
             </React.Suspense>
           </div>
