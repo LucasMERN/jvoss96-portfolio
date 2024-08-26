@@ -169,7 +169,7 @@ export default function Frigate() {
                               alt="gallery image"
                               src={`/damaged-frigate/${_}`}
                               style={{ objectFit: "cover" }}
-                              className="h-full w-full"
+                              className="h-full w-full aspect-video"
                             />
                           </CardContent>
                         </Card>
@@ -178,7 +178,7 @@ export default function Frigate() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={1500}
+                      height={800}
                       width={1500}
                       alt="gallery image"
                       src={`/damaged-frigate/${_}`}
@@ -230,7 +230,7 @@ export default function Frigate() {
                               alt="gallery image"
                               src={`/damaged-frigate/${_}`}
                               style={{ objectFit: "cover" }}
-                              className="h-full w-full"
+                              className="h-full w-full aspect-video"
                             />
                           </CardContent>
                         </Card>
@@ -239,7 +239,7 @@ export default function Frigate() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={1500}
+                      height={800}
                       width={1500}
                       alt="gallery image"
                       src={`/damaged-frigate/${_}`}
@@ -290,7 +290,7 @@ export default function Frigate() {
                               alt="gallery image"
                               src={`/damaged-frigate/${_}`}
                               style={{ objectFit: "cover" }}
-                              className="h-full w-full"
+                              className="h-full w-full aspect-video"
                             />
                           </CardContent>
                         </Card>
@@ -299,7 +299,7 @@ export default function Frigate() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={1500}
+                      height={800}
                       width={1500}
                       alt="gallery image"
                       src={`/damaged-frigate/${_}`}
@@ -352,7 +352,7 @@ export default function Frigate() {
                               alt="gallery image"
                               src={`/damaged-frigate/${_}`}
                               style={{ objectFit: "cover" }}
-                              className="h-full w-full"
+                              className="h-full w-full aspect-video"
                             />
                           </CardContent>
                         </Card>
@@ -361,7 +361,7 @@ export default function Frigate() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={1500}
+                      height={800}
                       width={1500}
                       alt="gallery image"
                       src={`/damaged-frigate/${_}`}
@@ -416,7 +416,7 @@ export default function Frigate() {
                               alt="gallery image"
                               src={`/damaged-frigate/${_}`}
                               style={{ objectFit: "cover" }}
-                              className="h-full w-full"
+                              className="h-full w-full aspect-video"
                             />
                           </CardContent>
                         </Card>
@@ -425,7 +425,7 @@ export default function Frigate() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={1500}
+                      height={800}
                       width={1500}
                       alt="gallery image"
                       src={`/damaged-frigate/${_}`}
@@ -475,7 +475,7 @@ export default function Frigate() {
                               alt="gallery image"
                               src={`/damaged-frigate/${_}`}
                               style={{ objectFit: "cover" }}
-                              className="h-full w-full"
+                              className="h-full w-full aspect-video"
                             />
                           </CardContent>
                         </Card>
@@ -484,7 +484,7 @@ export default function Frigate() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={1500}
+                      height={800}
                       width={1500}
                       alt="gallery image"
                       src={`/damaged-frigate/${_}`}

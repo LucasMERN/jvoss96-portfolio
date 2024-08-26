@@ -194,7 +194,7 @@ export default function Base() {
                               alt="gallery image"
                               src={`/underground-base/${_}`}
                               style={{ objectFit: "cover" }}
-                              className="h-full w-full"
+                              className="h-full w-full aspect-video"
                             />
                           </CardContent>
                         </Card>
@@ -203,7 +203,7 @@ export default function Base() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={1500}
+                      height={800}
                       width={1500}
                       alt="gallery image"
                       src={`/underground-base/${_}`}
@@ -257,7 +257,7 @@ export default function Base() {
                               alt="gallery image"
                               src={`/underground-base/${_}`}
                               style={{ objectFit: "cover" }}
-                              className="h-full w-full"
+                              className="h-full w-full aspect-video"
                             />
                           </CardContent>
                         </Card>
@@ -266,7 +266,7 @@ export default function Base() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={1500}
+                      height={800}
                       width={1500}
                       alt="gallery image"
                       src={`/underground-base/${_}`}
@@ -319,7 +319,7 @@ export default function Base() {
                               alt="gallery image"
                               src={`/underground-base/${_}`}
                               style={{ objectFit: "cover" }}
-                              className="h-full w-full"
+                              className="h-full w-full aspect-video"
                             />
                           </CardContent>
                         </Card>
@@ -328,7 +328,7 @@ export default function Base() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={1500}
+                      height={800}
                       width={1500}
                       alt="gallery image"
                       src={`/underground-base/${_}`}
@@ -384,7 +384,7 @@ export default function Base() {
                               alt="gallery image"
                               src={`/underground-base/${_}`}
                               style={{ objectFit: "cover" }}
-                              className="h-full w-full"
+                              className="h-full w-full aspect-video"
                             />
                           </CardContent>
                         </Card>
@@ -393,7 +393,7 @@ export default function Base() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={1500}
+                      height={800}
                       width={1500}
                       alt="gallery image"
                       src={`/underground-base/${_}`}
@@ -451,7 +451,7 @@ export default function Base() {
                               alt="gallery image"
                               src={`/underground-base/${_}`}
                               style={{ objectFit: "cover" }}
-                              className="h-full w-full"
+                              className="h-full w-full aspect-video"
                             />
                           </CardContent>
                         </Card>
@@ -460,7 +460,7 @@ export default function Base() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={1500}
+                      height={800}
                       width={1500}
                       alt="gallery image"
                       src={`/underground-base/${_}`}
@@ -508,7 +508,7 @@ export default function Base() {
                               alt="gallery image"
                               src={`/underground-base/${_}`}
                               style={{ objectFit: "cover" }}
-                              className="h-full w-full"
+                              className="h-full w-full aspect-video"
                             />
                           </CardContent>
                         </Card>
@@ -517,7 +517,7 @@ export default function Base() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={1500}
+                      height={800}
                       width={1500}
                       alt="gallery image"
                       src={`/underground-base/${_}`}
