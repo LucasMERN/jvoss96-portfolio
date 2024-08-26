@@ -16,7 +16,7 @@ const project = {
   title: "The Ruined Temple",
   role: "Lead Level Designer",
   url: "/projects/the-ruined-temple",
-  src: "/ruined-temple/cave-4.webp",
+  src: "/ruined-temple/cave-4.jpeg",
   alt: "gallery photo",
   desc: [
     "The idea for the following project took inspiration from the mountaintop temple “Machu Picchu” in Peru. I wanted to play with the idea of having the temple be mostly unexplored. So I designed a level with a focus on platforming and exploration. To encourage exploration I added several collectibles and chests for the player to find. some were easy to find as rewards for completing areas of the level and others required the player to go looking for them.",
@@ -30,55 +30,60 @@ const project = {
 };
 
 const caveGallery = [
-  "cave-1",
-  "cave-2",
-  "cave-3",
-  "cave-4",
-  "cave-5",
-  "cave-6",
-  "cave-7",
-  "cave-8",
-  "cave-9",
-  "cave-10",
-  "cave-11",
-  "cave-12",
+  "cave-1.jpeg",
+  "cave-2.jpeg",
+  "cave-3.jpeg",
+  "cave-4.jpeg",
+  "cave-5.jpeg",
+  "cave-6.jpeg",
+  "cave-7.jpeg",
+  "cave-8.jpeg",
+  "cave-9.jpeg",
+  "cave-10.jpeg",
+  "cave-11.jpeg",
+  "cave-12.jpeg",
 ];
 
 const climbGallery = [
-  "climb-1",
-  "climb-2",
-  "climb-3",
-  "climb-4",
-  "climb-5",
-  "climb-6",
-  "climb-7",
-  "climb-8",
-  "climb-9",
+  "climb-1.jpeg",
+  "climb-2.jpeg",
+  "climb-3.jpeg",
+  "climb-4.jpeg",
+  "climb-5.jpeg",
+  "climb-6.jpeg",
+  "climb-7.jpeg",
+  "climb-8.jpeg",
+  "climb-9.jpeg",
 ];
 
-const escapeGallery = ["escape-1", "escape-2", "escape-3", "escape-4"];
+const escapeGallery = [
+  "escape-1.jpeg",
+  "escape-2.jpeg",
+  "escape-3.jpeg",
+  "escape-4.jpeg",
+];
 
 const ruinGallery = [
-  "ruin-1",
-  "ruin-2",
-  "ruin-3",
-  "ruin-4",
-  "ruin-5",
-  "ruin-6",
+  "ruin-1.jpeg",
+  "ruin-2.jpeg",
+  "ruin-3.jpeg",
+  "ruin-4.jpeg",
+  "ruin-5.jpeg",
+  "ruin-6.jpeg",
 ];
 
 const ruininGallery = [
-  "ruinin-1",
-  "ruinin-2",
-  "ruinin-3",
-  "ruinin-4",
-  "ruinin-5",
-  "ruinin-6",
-  "ruinin-7",
-  "ruinin-8",
-  "ruinin-9",
-  "ruinin-10",
-  "ruinin-11",
+  "ruinin-1.jpeg",
+  "ruinin-2.jpeg",
+  "ruinin-3.jpeg",
+  "ruinin-4.jpeg",
+  "ruinin-5.jpeg",
+  "ruinin-6.jpeg",
+  "ruinin-7.jpeg",
+  "ruinin-8.jpeg",
+  "ruinin-9.jpeg",
+  "ruinin-10.jpeg",
+  "ruinin-11.jpeg",
 ];
 
 export default function Temple() {
@@ -148,7 +153,7 @@ export default function Temple() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/ruined-temple/${_}.webp`}
+                              src={`/ruined-temple/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -162,7 +167,7 @@ export default function Temple() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/ruined-temple/${_}.webp`}
+                      src={`/ruined-temple/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -217,7 +222,7 @@ export default function Temple() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/ruined-temple/${_}.webp`}
+                              src={`/ruined-temple/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -231,7 +236,7 @@ export default function Temple() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/ruined-temple/${_}.webp`}
+                      src={`/ruined-temple/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -287,7 +292,7 @@ export default function Temple() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/ruined-temple/${_}.webp`}
+                              src={`/ruined-temple/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -301,7 +306,7 @@ export default function Temple() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/ruined-temple/${_}.webp`}
+                      src={`/ruined-temple/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -354,7 +359,7 @@ export default function Temple() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/ruined-temple/${_}.webp`}
+                              src={`/ruined-temple/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -368,7 +373,7 @@ export default function Temple() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/ruined-temple/${_}.webp`}
+                      src={`/ruined-temple/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -416,7 +421,7 @@ export default function Temple() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/ruined-temple/${_}.webp`}
+                              src={`/ruined-temple/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -430,7 +435,7 @@ export default function Temple() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/ruined-temple/${_}.webp`}
+                      src={`/ruined-temple/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />

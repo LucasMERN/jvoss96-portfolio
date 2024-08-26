@@ -1,26 +1,32 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: "Justice Voss | Projects",
+  description: "Justice Voss's Projects",
+}
 
 const projects = [
   {
     title: "The Damaged Frigate",
     role: "Level Designer, Game Mechanic Designer",
     url: "/projects/the-damaged-frigate",
-    src: "/damaged-frigate/core-4.webp",
+    src: "/damaged-frigate/core-4.jpeg",
     alt: "A mech-suited character stands in a futuristic industrial environment, equipped with a repair beam and gravity gun, facing a room filled with brightly colored crates and glowing cylindrical objects, with objectives and controls displayed on the screen.",
   },
   {
     title: "Project Stormsurge",
     role: "Level Designer, Systems Designer, Game Mechanic Designer, Animator, 3D Modeler",
     url: "/projects/project-stormsurge",
-    src: "/project-stormsurge/boss-1.webp",
+    src: "/project-stormsurge/boss-1.jpeg",
     alt: "A dimly lit futuristic corridor is illuminated by warm, glowing lights, with a large, bright, dome-shaped energy field positioned at the center of the room, creating a striking contrast against the metallic environment.",
   },
   {
     title: "The Ruined Temple",
     role: "Level Designer",
     url: "/projects/the-ruined-temple",
-    src: "/ruined-temple/ruinin-10.webp",
+    src: "/ruined-temple/ruinin-10.jpeg",
     alt: "A dark dungeon chamber, loosely lit by wall torches. A wooden table sits center of the room with skeletal remains scattering the floor.",
   },
   {
@@ -34,7 +40,7 @@ const projects = [
     title: "The Underground Base",
     role: "Level Designer",
     url: "/projects/the-underground-base",
-    src: "/underground-base/c-36.webp",
+    src: "/underground-base/c-36.jpeg",
     alt: "A character standing in an interior space with orange-tiled walls and floor. Surrounding the character are large glowing cylindrical machines. Two figures on the ground appear to be incapacitated.",
   },
 ];

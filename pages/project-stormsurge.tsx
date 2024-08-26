@@ -16,7 +16,7 @@ const project = {
   title: "Project Stormsurge",
   role: "Level Designer, Systems Designer, Game Mechanic Designer, Animator, 3D Modeler",
   url: "/projects/project-stromsurge",
-  src: "/project-stormsurge/line-3.webp",
+  src: "/project-stormsurge/line-3.jpeg",
   alt: "gallery photo",
   desc: [
     "Project Stormsurge is a First-Person Action Adventure game. I was apart of a 7 member team working on this project as a graduation project. Now that we've graduated some of us are continuing to work on the game before we make it available for everyone to play on Itch.io",
@@ -28,34 +28,39 @@ const project = {
   engine: "Unreal Engine 5",
 };
 
-const bossGallery = ["boss-1", "boss-2", "boss-3"];
+const bossGallery = ["boss-1.jpeg", "boss-2.jpeg", "boss-3.jpeg"];
 
-const lineGallery = ["line-1", "line-2", "line-3", "line-4"];
+const lineGallery = [
+  "line-1.jpeg",
+  "line-2.jpeg",
+  "line-3.jpeg",
+  "line-4.jpeg",
+];
 
 const mainGallery = [
-  "main-1",
-  "main-2",
-  "main-3",
-  "main-4",
-  "main-6",
-  "main-7",
-  "main-8",
-  "main-9",
-  "main-10",
-  "main-11",
-  "main-12",
-  "main-13",
-  "main-14",
-  "main-15",
-  "main-16",
+  "main-1.jpeg",
+  "main-2.jpeg",
+  "main-3.jpeg",
+  "main-4.jpeg",
+  "main-6.jpeg",
+  "main-7.jpeg",
+  "main-8.jpeg",
+  "main-9.jpeg",
+  "main-10.jpeg",
+  "main-11.jpeg",
+  "main-12.jpeg",
+  "main-13.jpeg",
+  "main-14.jpeg",
+  "main-15.jpeg",
+  "main-16.jpeg",
 ];
 
 const storageGallery = [
-  "storage-1",
-  "storage-2",
-  "storage-3",
-  "storage-4",
-  "storage-5",
+  "storage-1.jpeg",
+  "storage-2.jpeg",
+  "storage-3.jpeg",
+  "storage-4.jpeg",
+  "storage-5.jpeg",
 ];
 
 export default function Stormsurge() {
@@ -139,7 +144,7 @@ export default function Stormsurge() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/project-stormsurge/${_}.webp`}
+                              src={`/project-stormsurge/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -153,7 +158,7 @@ export default function Stormsurge() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/project-stormsurge/${_}.webp`}
+                      src={`/project-stormsurge/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -200,7 +205,7 @@ export default function Stormsurge() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/project-stormsurge/${_}.webp`}
+                              src={`/project-stormsurge/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -214,7 +219,7 @@ export default function Stormsurge() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/project-stormsurge/${_}.webp`}
+                      src={`/project-stormsurge/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -262,7 +267,7 @@ export default function Stormsurge() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/project-stormsurge/${_}.webp`}
+                              src={`/project-stormsurge/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -276,7 +281,7 @@ export default function Stormsurge() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/project-stormsurge/${_}.webp`}
+                      src={`/project-stormsurge/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -330,7 +335,7 @@ export default function Stormsurge() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/project-stormsurge/${_}.webp`}
+                              src={`/project-stormsurge/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -344,7 +349,7 @@ export default function Stormsurge() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/project-stormsurge/${_}.webp`}
+                      src={`/project-stormsurge/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />

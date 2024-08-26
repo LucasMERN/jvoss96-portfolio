@@ -16,7 +16,7 @@ const project = {
   title: "The Underground Base",
   role: "Independent",
   url: "/projects/the-underground-base",
-  src: "/underground-base/b-3.webp",
+  src: "/underground-base/b-3.jpeg",
   alt: "gallery photo",
   desc: [
     "This Project was design to practice greyboxing and level prototyping, the focus was to expand my skills in creating puzzles with an IPM (Introduce, Practice, Mastery) design methodology. I also wanted to practice creating play spaces that end where the player enters like dungeons and side areas in large RPG games like Horizon: Zero Dawn. The theme for this project was a hidden base in the mountains with the overall design being inspired by the portal series.",
@@ -27,88 +27,101 @@ const project = {
   engine: "Unreal Engine 4",
 };
 
-const aGallery = ["a-1", "a-2", "a-3", "a-4", "a-5", "a-6", "a-7"];
+const aGallery = [
+  "a-1.jpeg",
+  "a-2.jpeg",
+  "a-3.jpeg",
+  "a-4.jpeg",
+  "a-5.jpeg",
+  "a-6.jpeg",
+  "a-7.jpeg",
+];
 
 const bGallery = [
-  "b-1",
-  "b-2",
-  "b-3",
-  "b-4",
-  "b-5",
-  "b-6",
-  "b-7",
-  "b-8",
-  "b-9",
-  "b-10",
-  "b-11",
-  "b-12",
-  "b-13",
-  "b-14",
-  "b-15",
-  "b-16",
-  "b-17",
-  "b-18",
-  "b-19",
-  "b-20",
-  "b-21",
-  "b-22",
-  "b-23",
-  "b-24",
+  "b-1.jpeg",
+  "b-2.jpeg",
+  "b-3.jpeg",
+  "b-4.jpeg",
+  "b-5.jpeg",
+  "b-6.jpeg",
+  "b-7.jpeg",
+  "b-8.jpeg",
+  "b-9.jpeg",
+  "b-10.jpeg",
+  "b-11.jpeg",
+  "b-12.jpeg",
+  "b-13.jpeg",
+  "b-14.jpeg",
+  "b-15.jpeg",
+  "b-16.jpeg",
+  "b-17.jpeg",
+  "b-18.jpeg",
+  "b-19.jpeg",
+  "b-20.jpeg",
+  "b-21.jpeg",
+  "b-22.jpeg",
+  "b-23.jpeg",
+  "b-24.jpeg",
 ];
 
 const cGallery = [
-  "c-1",
-  "c-2",
-  "c-3",
-  "c-4",
-  "c-5",
-  "c-6",
-  "c-7",
-  "c-8",
-  "c-9",
-  "c-10",
-  "c-11",
-  "c-12",
-  "c-13",
-  "c-14",
-  "c-15",
-  "c-16",
-  "c-17",
-  "c-18",
-  "c-19",
-  "c-20",
-  "c-21",
-  "c-22",
-  "c-23",
-  "c-24",
-  "c-25",
-  "c-26",
-  "c-27",
-  "c-28",
-  "c-29",
-  "c-30",
-  "c-31",
-  "c-32",
-  "c-33",
-  "c-34",
-  "c-35",
-  "c-36",
-  "c-37",
-  "c-38",
+  "c-1.jpeg",
+  "c-2.jpeg",
+  "c-3.jpeg",
+  "c-4.jpeg",
+  "c-5.jpeg",
+  "c-6.jpeg",
+  "c-7.jpeg",
+  "c-8.jpeg",
+  "c-9.jpeg",
+  "c-10.jpeg",
+  "c-11.jpeg",
+  "c-12.jpeg",
+  "c-13.jpeg",
+  "c-14.jpeg",
+  "c-15.jpeg",
+  "c-16.jpeg",
+  "c-17.jpeg",
+  "c-18.jpeg",
+  "c-19.jpeg",
+  "c-20.jpeg",
+  "c-21.jpeg",
+  "c-22.jpeg",
+  "c-23.jpeg",
+  "c-24.jpeg",
+  "c-25.jpeg",
+  "c-26.jpeg",
+  "c-27.jpeg",
+  "c-28.jpeg",
+  "c-29.jpeg",
+  "c-30.jpeg",
+  "c-31.jpeg",
+  "c-32.jpeg",
+  "c-33.jpeg",
+  "c-34.jpeg",
+  "c-35.jpeg",
+  "c-36.jpeg",
+  "c-37.jpeg",
+  "c-38.jpeg",
 ];
 
-const caveGallery = ["cave-1", "cave-2", "cave-3", "cave-4"];
+const caveGallery = [
+  "cave-1.jpeg",
+  "cave-2.jpeg",
+  "cave-3.jpeg",
+  "cave-4.jpeg",
+];
 
 const shaftGallery = [
-  "shaft-1",
-  "shaft-2",
-  "shaft-3",
-  "shaft-4",
-  "shaft-5",
-  "shaft-6",
-  "shaft-7",
-  "shaft-8",
-  "shaft-9",
+  "shaft-1.jpeg",
+  "shaft-2.jpeg",
+  "shaft-3.jpeg",
+  "shaft-4.jpeg",
+  "shaft-5.jpeg",
+  "shaft-6.jpeg",
+  "shaft-7.jpeg",
+  "shaft-8.jpeg",
+  "shaft-9.jpeg",
 ];
 
 const xGallery = ["x-1", "x-2", "x-3", "x-4"];
@@ -173,7 +186,7 @@ export default function Base() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/underground-base/${_}.webp`}
+                              src={`/underground-base/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -187,7 +200,7 @@ export default function Base() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/underground-base/${_}.webp`}
+                      src={`/underground-base/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -236,7 +249,7 @@ export default function Base() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/underground-base/${_}.webp`}
+                              src={`/underground-base/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -250,7 +263,7 @@ export default function Base() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/underground-base/${_}.webp`}
+                      src={`/underground-base/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -298,7 +311,7 @@ export default function Base() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/underground-base/${_}.webp`}
+                              src={`/underground-base/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -312,7 +325,7 @@ export default function Base() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/underground-base/${_}.webp`}
+                      src={`/underground-base/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -363,7 +376,7 @@ export default function Base() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/underground-base/${_}.webp`}
+                              src={`/underground-base/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -377,7 +390,7 @@ export default function Base() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/underground-base/${_}.webp`}
+                      src={`/underground-base/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -430,7 +443,7 @@ export default function Base() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/underground-base/${_}.webp`}
+                              src={`/underground-base/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -444,7 +457,7 @@ export default function Base() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/underground-base/${_}.webp`}
+                      src={`/underground-base/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -487,7 +500,7 @@ export default function Base() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/underground-base/${_}.webp`}
+                              src={`/underground-base/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -501,7 +514,7 @@ export default function Base() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/underground-base/${_}.webp`}
+                      src={`/underground-base/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />

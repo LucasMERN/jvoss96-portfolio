@@ -29,21 +29,21 @@ const project = {
 };
 
 const gallery = [
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "10",
-  "11",
-  "doc-1",
-  "doc-2",
-  "doc-3",
-  "doc-4",
+  "1.webp",
+  "2.jpeg",
+  "3.webp",
+  "4.jpeg",
+  "5.webp",
+  "6.jpeg",
+  "7.jpeg",
+  "8.jpeg",
+  "9.jpeg",
+  "10.webp",
+  "11.webp",
+  "doc-1.jpeg",
+  "doc-2.jpeg",
+  "doc-3.jpeg",
+  "doc-4.jpeg",
 ];
 
 export default function Base() {
@@ -110,7 +110,7 @@ export default function Base() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/necromancer/${_}.webp`}
+                              src={`/necromancer/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -124,7 +124,7 @@ export default function Base() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/necromancer/${_}.webp`}
+                      src={`/necromancer/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />

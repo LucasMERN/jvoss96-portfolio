@@ -1,5 +1,11 @@
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: "Justice Voss | Resume",
+  description: "Justice Voss's Resume",
+}
 
 export default function Resume() {
   return (

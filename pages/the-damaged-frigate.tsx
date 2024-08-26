@@ -30,65 +30,70 @@ const project = {
 };
 
 const documentGallery = [
-  "doc-1",
-  "doc-2",
-  "doc-3",
-  "doc-4",
-  "doc-5",
-  "doc-6",
-  "doc-7",
+  "doc-1.webp",
+  "doc-2.webp",
+  "doc-3.webp",
+  "doc-4.webp",
+  "doc-5.webp",
+  "doc-6.webp",
+  "doc-7.webp",
 ];
 
 const coreGallery = [
-  "core-1",
-  "core-2",
-  "core-3",
-  "core-4",
-  "core-5",
-  "core-6",
-  "core-7",
+  "core-1.jpeg",
+  "core-2.jpeg",
+  "core-3.jpeg",
+  "core-4.jpeg",
+  "core-5.jpeg",
+  "core-6.webp",
+  "core-7.webp",
 ];
 
 const habitatGallery = [
-  "habitat-1",
-  "habitat-2",
-  "habitat-3",
-  "habitat-4",
-  "habitat-5",
-  "habitat-6",
-  "habitat-7",
-  "habitat-8",
+  "habitat-1.jpeg",
+  "habitat-2.jpeg",
+  "habitat-3.jpeg",
+  "habitat-4.jpeg",
+  "habitat-5.jpeg",
+  "habitat-6.jpeg",
+  "habitat-7.jpeg",
+  "habitat-8.webp",
 ];
 
-const levelGallery = ["level-1", "level-2", "level-3", "level-4"];
+const levelGallery = [
+  "level-1.webp",
+  "level-2.webp",
+  "level-3.webp",
+  "level-4.webp",
+];
 
 const shipGallery = [
-  "ship-1",
-  "ship-2",
-  "ship-3",
-  "ship-4",
-  "ship-5",
-  "ship-6",
-  "ship-7",
-  "ship-8",
+  "ship-1.jpeg",
+  "ship-2.jpeg",
+  "ship-3.jpeg",
+  "ship-4.jpeg",
+  "ship-5.jpeg",
+  "ship-6.jpeg",
+  "ship-7.jpeg",
+  "ship-8.jpeg",
 ];
 
 const tunnelGallery = [
-  "tunnel-1",
-  "tunnel-2",
-  "tunnel-3",
-  "tunnel-4",
-  "tunnel-5",
-  "tunnel-6",
-  "tunnel-7",
-  "tunnel-8",
-  "tunnel-9",
-  "tunnel-10",
-  "tunnel-11",
-  "tunnel-12",
-  "tunnel-13",
-  "tunnel-14",
-  "tunnel-15",
+  "tunnel-1.jpeg",
+  "tunnel-2.jpeg",
+  "tunnel-3.jpeg",
+  "tunnel-4.jpeg",
+  "tunnel-5.jpeg",
+  "tunnel-6.jpeg",
+  "tunnel-7.jpeg",
+  "tunnel-8.jpeg",
+  "tunnel-9.jpeg",
+  "tunnel-10.jpeg",
+  "tunnel-11.jpeg",
+  "tunnel-12.jpeg",
+  "tunnel-13.jpeg",
+  "tunnel-14.jpeg",
+  "tunnel-15.jpeg",
 ];
 
 export default function Frigate() {
@@ -161,7 +166,7 @@ export default function Frigate() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/damaged-frigate/${_}.webp`}
+                              src={`/damaged-frigate/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -175,7 +180,7 @@ export default function Frigate() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/damaged-frigate/${_}.webp`}
+                      src={`/damaged-frigate/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -222,7 +227,7 @@ export default function Frigate() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/damaged-frigate/${_}.webp`}
+                              src={`/damaged-frigate/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -236,7 +241,7 @@ export default function Frigate() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/damaged-frigate/${_}.webp`}
+                      src={`/damaged-frigate/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -282,7 +287,7 @@ export default function Frigate() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/damaged-frigate/${_}.webp`}
+                              src={`/damaged-frigate/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -296,7 +301,7 @@ export default function Frigate() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/damaged-frigate/${_}.webp`}
+                      src={`/damaged-frigate/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -344,7 +349,7 @@ export default function Frigate() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/damaged-frigate/${_}.webp`}
+                              src={`/damaged-frigate/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -358,7 +363,7 @@ export default function Frigate() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/damaged-frigate/${_}.webp`}
+                      src={`/damaged-frigate/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -408,7 +413,7 @@ export default function Frigate() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/damaged-frigate/${_}.webp`}
+                              src={`/damaged-frigate/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -422,7 +427,7 @@ export default function Frigate() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/damaged-frigate/${_}.webp`}
+                      src={`/damaged-frigate/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
@@ -467,7 +472,7 @@ export default function Frigate() {
                               height={500}
                               width={500}
                               alt="gallery image"
-                              src={`/damaged-frigate/${_}.webp`}
+                              src={`/damaged-frigate/${_}`}
                               style={{ objectFit: "cover" }}
                               className="h-full w-full"
                             />
@@ -481,7 +486,7 @@ export default function Frigate() {
                       height={500}
                       width={500}
                       alt="gallery image"
-                      src={`/damaged-frigate/${_}.webp`}
+                      src={`/damaged-frigate/${_}`}
                       style={{ objectFit: "cover" }}
                       className="h-full w-full"
                     />
