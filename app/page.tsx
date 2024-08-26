@@ -7,7 +7,9 @@ export default function Home() {
     <main className="min-h-screen flex flex-col gap-6">
       <section className="container flex flex-col lg:flex-row lg:gap-24 mb-24">
         <div className="flex flex-col mt-8">
-          <h2 className="text-2xl font-bold tracking-widest mt-8 mb-4">ABOUT</h2>
+          <h2 className="text-2xl font-bold tracking-widest mt-8 mb-4">
+            ABOUT
+          </h2>
           <div className="rounded-full overflow-hidden aspect-square">
             <Image
               height={300}

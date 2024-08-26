@@ -113,6 +113,13 @@ const caveGallery = [
   "cave-4.jpeg",
 ];
 
+const xGallery = [
+  "x-1.jpeg",
+  "x-2.jpeg",
+  "x-3.jpeg",
+  "x-4.jpeg",
+];
+
 const shaftGallery = [
   "shaft-1.jpeg",
   "shaft-2.jpeg",
@@ -124,8 +131,6 @@ const shaftGallery = [
   "shaft-8.jpeg",
   "shaft-9.jpeg",
 ];
-
-const xGallery = ["x-1", "x-2", "x-3", "x-4"];
 
 export default function Base() {
   return (

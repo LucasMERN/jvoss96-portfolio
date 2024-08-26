@@ -5,8 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import line3 from "@/public/project-stormsurge/line-3.jpeg"
-import core4 from "@/public/damaged-frigate/core-4.jpeg"
+import line3 from "@/public/project-stormsurge/line-3.jpeg";
+import core4 from "@/public/damaged-frigate/core-4.jpeg";
 import ruinin10 from "@/public/ruined-temple/ruinin-10.jpeg";
 import image10 from "@/public/necromancer/10.webp";
 import c36 from "@/public/underground-base/c-36.jpeg";
@@ -111,12 +111,7 @@ const Hero = () => {
         >
           <ChevronRight />
         </Button>
-        <Image
-          fill
-          src={src}
-          alt={alt}
-          priority={true}
-        />
+        <Image fill src={src} alt={alt} priority={true} />
         <div className="text-slate-200 absolute top-8 md:top-20 lg:top-1/4 left-0 transform w-full lg:w-1/2 ">
           <div className="flex flex-col gap-6 lg:bg-black/50 rounded mx-8 lg:p-6">
             <h2 className="text-3xl font-bold">{title}</h2>

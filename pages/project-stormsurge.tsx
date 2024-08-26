@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import ProjectHero from "@/components/projectHero";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import line3 from "@/public/project-stormsurge/line-3.jpeg"
+import line3 from "@/public/project-stormsurge/line-3.jpeg";
 
 const project = {
   title: "Project Stormsurge",

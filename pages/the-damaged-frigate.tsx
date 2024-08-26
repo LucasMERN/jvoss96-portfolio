@@ -62,10 +62,10 @@ const habitatGallery = [
 ];
 
 const levelGallery = [
-  "level-1.webp",
-  "level-2.webp",
+  "level-1.jpeg",
+  "level-2.jpeg",
   "level-3.webp",
-  "level-4.webp",
+  "level-4.jpeg",
 ];
 
 const shipGallery = [

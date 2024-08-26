@@ -1,16 +1,16 @@
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
-import boss1 from "@/public/project-stormsurge/boss-3.jpeg"
-import core4 from "@/public/damaged-frigate/core-4.jpeg"
+import boss1 from "@/public/project-stormsurge/boss-3.jpeg";
+import core4 from "@/public/damaged-frigate/core-4.jpeg";
 import ruinin10 from "@/public/ruined-temple/ruinin-10.jpeg";
 import image10 from "@/public/necromancer/10.webp";
 import c36 from "@/public/underground-base/c-36.jpeg";
-import type { Metadata } from 'next'
- 
+import type { Metadata } from "next";
+
 export const metadata: Metadata = {
   title: "Justice Voss | Projects",
   description: "Justice Voss's Projects",
-}
+};
 
 const projects = [
   {
