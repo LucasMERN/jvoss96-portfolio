@@ -10,7 +10,7 @@ export default function Home() {
           <h2 className="text-2xl font-bold tracking-widest mt-8 mb-4">
             ABOUT
           </h2>
-          <div className="rounded-full overflow-hidden aspect-square">
+          <div className="lg:rounded-full lg:overflow-hidden lg:aspect-square">
             <Image
               height={300}
               width={300}
