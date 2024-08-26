@@ -11,12 +11,13 @@ import {
 } from "@/components/ui/carousel";
 import ProjectHero from "@/components/projectHero";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import b3 from "@/public/underground-base/b-3.jpeg";
 
 const project = {
   title: "The Underground Base",
   role: "Independent",
   url: "/projects/the-underground-base",
-  src: "/underground-base/b-3.jpeg",
+  src: b3,
   alt: "gallery photo",
   desc: [
     "This Project was design to practice greyboxing and level prototyping, the focus was to expand my skills in creating puzzles with an IPM (Introduce, Practice, Mastery) design methodology. I also wanted to practice creating play spaces that end where the player enters like dungeons and side areas in large RPG games like Horizon: Zero Dawn. The theme for this project was a hidden base in the mountains with the overall design being inspired by the portal series.",
@@ -197,8 +198,8 @@ export default function Base() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/underground-base/${_}`}
                       style={{ objectFit: "cover" }}
@@ -260,8 +261,8 @@ export default function Base() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/underground-base/${_}`}
                       style={{ objectFit: "cover" }}
@@ -322,8 +323,8 @@ export default function Base() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/underground-base/${_}`}
                       style={{ objectFit: "cover" }}
@@ -387,8 +388,8 @@ export default function Base() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/underground-base/${_}`}
                       style={{ objectFit: "cover" }}
@@ -454,8 +455,8 @@ export default function Base() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/underground-base/${_}`}
                       style={{ objectFit: "cover" }}
@@ -511,8 +512,8 @@ export default function Base() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/underground-base/${_}`}
                       style={{ objectFit: "cover" }}

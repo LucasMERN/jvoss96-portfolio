@@ -11,12 +11,13 @@ import {
 } from "@/components/ui/carousel";
 import ProjectHero from "@/components/projectHero";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import line3 from "@/public/project-stormsurge/line-3.jpeg"
 
 const project = {
   title: "Project Stormsurge",
   role: "Level Designer, Systems Designer, Game Mechanic Designer, Animator, 3D Modeler",
   url: "/projects/project-stromsurge",
-  src: "/project-stormsurge/line-3.jpeg",
+  src: line3,
   alt: "gallery photo",
   desc: [
     "Project Stormsurge is a First-Person Action Adventure game. I was apart of a 7 member team working on this project as a graduation project. Now that we've graduated some of us are continuing to work on the game before we make it available for everyone to play on Itch.io",
@@ -155,8 +156,8 @@ export default function Stormsurge() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/project-stormsurge/${_}`}
                       style={{ objectFit: "cover" }}
@@ -216,8 +217,8 @@ export default function Stormsurge() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/project-stormsurge/${_}`}
                       style={{ objectFit: "cover" }}
@@ -278,8 +279,8 @@ export default function Stormsurge() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/project-stormsurge/${_}`}
                       style={{ objectFit: "cover" }}
@@ -346,8 +347,8 @@ export default function Stormsurge() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/project-stormsurge/${_}`}
                       style={{ objectFit: "cover" }}

@@ -11,12 +11,13 @@ import {
 } from "@/components/ui/carousel";
 import ProjectHero from "@/components/projectHero";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import cave4 from "@/public/ruined-temple/cave-4.jpeg";
 
 const project = {
   title: "The Ruined Temple",
   role: "Lead Level Designer",
   url: "/projects/the-ruined-temple",
-  src: "/ruined-temple/cave-4.jpeg",
+  src: cave4,
   alt: "gallery photo",
   desc: [
     "The idea for the following project took inspiration from the mountaintop temple “Machu Picchu” in Peru. I wanted to play with the idea of having the temple be mostly unexplored. So I designed a level with a focus on platforming and exploration. To encourage exploration I added several collectibles and chests for the player to find. some were easy to find as rewards for completing areas of the level and others required the player to go looking for them.",
@@ -164,8 +165,8 @@ export default function Temple() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/ruined-temple/${_}`}
                       style={{ objectFit: "cover" }}
@@ -233,8 +234,8 @@ export default function Temple() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/ruined-temple/${_}`}
                       style={{ objectFit: "cover" }}
@@ -303,8 +304,8 @@ export default function Temple() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/ruined-temple/${_}`}
                       style={{ objectFit: "cover" }}
@@ -370,8 +371,8 @@ export default function Temple() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/ruined-temple/${_}`}
                       style={{ objectFit: "cover" }}
@@ -432,8 +433,8 @@ export default function Temple() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/ruined-temple/${_}`}
                       style={{ objectFit: "cover" }}

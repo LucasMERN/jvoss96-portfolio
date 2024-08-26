@@ -11,12 +11,13 @@ import {
 } from "@/components/ui/carousel";
 import ProjectHero from "@/components/projectHero";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import image3 from "@/public/necromancer/3.webp";
 
 const project = {
   title: "The Necromancer",
   role: "Level Designer, Game Mechanic Designer, 3D Modeler",
   url: "/projects/the-necromancer",
-  src: "/necromancer/3.webp",
+  src: image3,
   alt: "gallery photo",
   desc: [
     "This Project we were to take on the role of a game designer working for a game company tasked with coming up with a mechanic to implement into the companies new tile-based game project Tournamental. There was no theme for this and we also had to later implement a peers mechanic into our project to work alongside the original mechanic I made. Below are the pictures and videos related to this Project.",
@@ -121,8 +122,8 @@ export default function Base() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/necromancer/${_}`}
                       style={{ objectFit: "cover" }}

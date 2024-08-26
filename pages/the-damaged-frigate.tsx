@@ -11,12 +11,13 @@ import {
 } from "@/components/ui/carousel";
 import ProjectHero from "@/components/projectHero";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import level4 from "@/public/damaged-frigate/level-4.jpeg";
 
 const project = {
   title: "The Damaged Frigate",
   role: "Level Designer, Game Mechanic Designer",
   url: "/projects/the-damaged-frigate",
-  src: "/damaged-frigate/level-4.webp",
+  src: level4,
   alt: "A mech-suited character stands in a futuristic industrial environment, equipped with a repair beam and gravity gun, facing a room filled with brightly colored crates and glowing cylindrical objects, with objectives and controls displayed on the screen.",
   desc: [
     "The player takes control of a engineer in a mech suit tasked with repairing the critical systems of a recently damaged frigate so that it can be safely transported to the nearby station for proper repairs to be done. The player has access to a repair mode and a gravity gun mode which allows the player to pickup and move objects as the explore the ship looking for the reactor and any side objectives along the way. There are also hidden things scattered throughout the level for the player to find along the way as well as side objectives that the player may or may not complete.",
@@ -177,8 +178,8 @@ export default function Frigate() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/damaged-frigate/${_}`}
                       style={{ objectFit: "cover" }}
@@ -238,8 +239,8 @@ export default function Frigate() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/damaged-frigate/${_}`}
                       style={{ objectFit: "cover" }}
@@ -298,8 +299,8 @@ export default function Frigate() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/damaged-frigate/${_}`}
                       style={{ objectFit: "cover" }}
@@ -360,8 +361,8 @@ export default function Frigate() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/damaged-frigate/${_}`}
                       style={{ objectFit: "cover" }}
@@ -424,8 +425,8 @@ export default function Frigate() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/damaged-frigate/${_}`}
                       style={{ objectFit: "cover" }}
@@ -483,8 +484,8 @@ export default function Frigate() {
                   </DialogTrigger>
                   <DialogContent className="max-w-5xl">
                     <Image
-                      height={500}
-                      width={500}
+                      height={1500}
+                      width={1500}
                       alt="gallery image"
                       src={`/damaged-frigate/${_}`}
                       style={{ objectFit: "cover" }}

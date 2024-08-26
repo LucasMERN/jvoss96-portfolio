@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type ProjectData = {
   title: string;
@@ -8,7 +8,7 @@ type ProjectData = {
   genre: string;
   platform: string;
   engine: string;
-  src: string;
+  src: StaticImageData;
   alt: string;
 };
 
@@ -17,9 +17,6 @@ const ProjectHero = ({ item }: { item: ProjectData }) => {
     <section className="flex flex-col gap-8">
       <div className="aspect-video w-full h-full flex justify-center items-center shadow-lg relative xl:h-[45rem]">
         <Image
-          width={500}
-          height={500}
-          style={{ objectFit: "cover" }}
           src={item.src}
           alt={item.alt}
           className="h-full w-full"

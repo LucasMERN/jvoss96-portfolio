@@ -1,5 +1,6 @@
 import Hero from "@/components/hero";
 import Image from "next/image";
+import headshot from "@/public/headshot.webp";
 
 export default function Home() {
   return (
@@ -11,8 +12,9 @@ export default function Home() {
             height={300}
             width={300}
             alt="Headshot of Justice Voss."
-            src="/headshot.webp"
+            src={headshot}
             className="-mt-8 h-auto"
+            priority
           />
         </div>
         <p className="lg:w-1/2 mt-6 lg:mt-24">

@@ -5,41 +5,46 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import line3 from "@/public/project-stormsurge/line-3.jpeg"
+import core4 from "@/public/damaged-frigate/core-4.jpeg"
+import ruinin10 from "@/public/ruined-temple/ruinin-10.jpeg";
+import image10 from "@/public/necromancer/10.webp";
+import c36 from "@/public/underground-base/c-36.jpeg";
 
 const heroCarousel = [
   {
     title: "The Damaged Frigate",
     desc: "Players control a mech-suited engineer navigating a tightly designed, interconnected frigate, using repair and gravity gun abilities to fix critical systems, locate the reactor, pursue optional side objectives, and uncover hidden items.",
     url: "/projects/the-damaged-frigate",
-    src: "/damaged-frigate/core-4.jpeg",
+    src: core4,
     alt: "A mech-suited character stands in a futuristic industrial environment, equipped with a repair beam and gravity gun, facing a room filled with brightly colored crates and glowing cylindrical objects, with objectives and controls displayed on the screen.",
   },
   {
     title: "Project Stormsurge",
     desc: "Project Stormsurge is a First-Person Action Adventure game where players infiltrate a downed enemy spaceship as resistance agents, battling through hostile human facilities to reach and defeat the enemy AI Core.",
     url: "/projects/project-stormsurge",
-    src: "/project-stormsurge/boss-1.jpeg",
+    src: line3,
     alt: "A dimly lit futuristic corridor is illuminated by warm, glowing lights, with a large, bright, dome-shaped energy field positioned at the center of the room, creating a striking contrast against the metallic environment.",
   },
   {
     title: "The Ruined Temple",
     desc: "Inspired by Machu Picchu, players will explore a mysterious, abandoned temple filled with collectibles, traps, and battle-scarred ruins, all while hinting at the temple's forgotten history. Can you unlock the mystery of The Ruined Temple?",
     url: "/projects/the-ruined-temple",
-    src: "/ruined-temple/ruinin-10.jpeg",
+    src: ruinin10,
     alt: "A dark dungeon chamber, loosely lit by wall torches. A wooden table sits center of the room with skeletal remains scattering the floor.",
   },
   {
     title: "The Necromancer",
     desc: "Tile based puzzle game stocked full of enemy pawns, summoned skeletons and turrets! Interact with your environment, summon helper skeletons, and beat the puzzle to continue to the next level.",
     url: "/projects/the-necromancer",
-    src: "/necromancer/10.webp",
+    src: image10,
     alt: "A necromancer, skeleton, pawn, and turret sit side by side ontop a checkered floor.",
   },
   {
     title: "The Underground Base",
     desc: "In this 3D world, you control a character navigating an underground base, solving environmental puzzles to escape.",
     url: "/projects/the-underground-base",
-    src: "/underground-base/c-36.jpeg",
+    src: c36,
     alt: "A character standing in an interior space with orange-tiled walls and floor. Surrounding the character are large glowing cylindrical machines. Two figures on the ground appear to be incapacitated.",
   },
 ];
@@ -107,12 +112,10 @@ const Hero = () => {
           <ChevronRight />
         </Button>
         <Image
-          fill={true}
-          style={{ objectFit: "cover" }}
+          fill
           src={src}
           alt={alt}
           priority={true}
-          className="object-cover w-full h-full"
         />
         <div className="text-slate-200 absolute top-8 md:top-20 lg:top-1/4 left-0 transform w-full lg:w-1/2 ">
           <div className="flex flex-col gap-6 lg:bg-black/50 rounded mx-8 lg:p-6">
