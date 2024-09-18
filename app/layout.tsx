@@ -4,9 +4,10 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import Link from "next/link";
-import { Linkedin, Mail, Youtube } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import BackToTopButton from "@/components/backToTop";
 import BackToHomeButton from "@/components/backToHomeButton";
+import { Toaster } from "@/components/ui/toaster";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -47,6 +48,7 @@ export default function RootLayout({
           </div>
           <BackToHomeButton />
           {children}
+          <Toaster />
           <BackToTopButton />
           <footer className="border-t border-primary py-6">
             <section className="container flex flex-col gap-3 md:gap-0 md:flex-row md:justify-between">

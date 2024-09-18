@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -13,7 +14,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Textarea } from "@/components/ui/textarea";
-import { toast } from "@/lib/use-toast";
+import { useToast } from "@/lib/use-toast";
 import { Input } from "@/components/ui/input";
 
 const FormSchema = z.object({
@@ -28,11 +29,22 @@ const FormSchema = z.object({
 });
 
 export default function ContactForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      subject: "",
+      contact: "",
+    },
   });
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
+    setIsSubmitting(true);
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -47,18 +59,19 @@ export default function ContactForm() {
           title: "Message Sent!",
           description: "Your message has been sent successfully.",
         });
-        form.reset(); // Reset the form after successful submission
+        form.reset();
       } else {
-        toast({
-          title: "Error",
-          description: "There was an error sending your message.",
-        });
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Failed to send message");
       }
     } catch (error) {
       toast({
         title: "Error",
-        description: "There was an error sending your message.",
+        description: error instanceof Error ? error.message : "There was an error sending your message.",
+        variant: "destructive",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   }
 
@@ -148,8 +161,9 @@ export default function ContactForm() {
             type="submit"
             className="w-1/4 min-w-fit"
             aria-label="click to submit"
+            disabled={isSubmitting}
           >
-            Send
+            {isSubmitting ? "Sending..." : "Send"}
           </Button>
         </div>
       </form>
